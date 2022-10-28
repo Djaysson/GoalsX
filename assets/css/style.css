@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --White-color: rgb(255, 255, 255);
+  --red-color: rgb(241, 76, 76);
+  --white02-color: rgba(248, 243, 243, 0.836);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  margin: 0 auto;
+  background: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 50px auto;
+  background: var(--White-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+.container h1 {
+  font-family: "Mochiy Pop One", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+.tasks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+}
+.tasks li {
+  padding: 5px 0 5px 4px;
+  background: var(--white02-color);
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.tasks li button {
+  background-color: var(--red-color);
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--White-color);
+  height: 1.7rem;
+  padding: 5px;
+  margin-left: 0.7rem;
+  transition: all 0.2s;
+  letter-spacing: 0.1rem;
+}
+.tasks li button:hover {
+  filter: brightness(0.9);
+  transform: scale(1.1);
+}
+.form input,
+.form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form input {
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 0 20px;
+  color: var(--primary-color);
+}
+
+.form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.form button {
+  border: none;
+  background: var(--primary-color);
+  color: var(--White-color);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.form button:hover {
+  background: var(--primary-color-darker);
+}
